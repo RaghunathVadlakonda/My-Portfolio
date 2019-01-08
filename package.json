@@ -1,0 +1,19 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "A responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaghunathVadlakonda/My-Portfolio.git"
+  },
+  "author": "RaghunathVadlakonda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaghunathVadlakonda/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/RaghunathVadlakonda/My-Portfolio#readme"
+}
