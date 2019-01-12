@@ -1,5 +1,12 @@
-// menu
+//logo
+.logo{
+  position: absolute;
+  left:55px;
+  top:35px; 
+  overflow: hidden;
+}
 
+// Menu Button
 .menu-btn {
     position: absolute;
     z-index: 3;
@@ -7,15 +14,13 @@
     top: 35px;
     cursor: pointer;
     @include easeOut;
-
-
+  
     .btn-line {
-        width: 28px;
-        height: 3px;
-        margin: 0 0 5px 0;
-        background: set-text-color($primary-color);
-        @include easeOut;
-
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: set-text-color($primary-color);
+      @include easeOut;
     }
 
     &.close {
@@ -64,32 +69,35 @@
         height: 100vh;
         overflow: hidden;
     }
+
     &-nav {
         margin: 0;
         padding: 0;
         background: rgba(darken($primary-color, 3), 0.9);
         list-style: none;
-        transform: translate3d(0, -100%, 0);
-        @include easeOut;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
 
-        &.show {
-            transform: translate3d(0, 0, 0);
-        }
-    }    
+    &.show {
+      // Slide in from top
+      transform: translate3d(0, 0, 0);
+    }
+  }    
 
     &-branding {
-        background: rgba(lighten($primary-color, 3), 0.6);
-      transform: translate3d(0, 100%, 0);
-        @include easeOut;
+    background: rgba(lighten($primary-color, 3), 0.6);
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
 
-        &.show {
-            transform: translate3d(0, 0, 0);
-        }
+    &.show {
+      // Slide in from bottom
+      transform: translate3d(0, 0, 0);
+    }
 
         .portrait {
             width: 250px;
             height: 250px;
-            background: url('../img/portrait_small.jpg');
+            background: url('../img/portrait.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -101,15 +109,16 @@
     .nav-item {
         transform: translate3d(600px, 0, 0);
         @include easeOut;
-
+    
         &.show {
-            transform: translate3d(0, 0, 0);
-        }    
-
-        &.current > a {
-            color: $secondary-color;
+          // Slide in from right
+          transform: translate3d(0, 0, 0);
         }
-    }
+    
+        &.current > a {
+          color: $secondary-color;
+        }
+      }
 
     .nav-link {
         display: inline-block;
